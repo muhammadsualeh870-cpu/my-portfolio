@@ -2,144 +2,276 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Sualeh Ali Mirza | Portfolio</title>
-
-    <link rel="stylesheet"
-          href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Navigation Bar -->
     <nav>
+        <h2>Sualeh.Dev</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle light/dark mode">
+                    <!-- Sun Icon -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon Icon -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </nav>
 
-    <h2>Portfolio</h2>
-
-  
-
-    <ul>
-
-        <li><a href="#home">Home</a></li>
-
-        <li><a href="#about">About</a></li>
-
-        <li><a href="#skills">Skills</a></li>
-
-        <li><a href="#projects">Projects</a></li>
-
-        <li><a href="#contact">Contact</a></li>
-
-    </ul>
-
-</nav>
-
+    <!-- Hero Section -->
     <section class="hero" id="home">
-       
+        <span class="hero-badge">Welcome to my space</span>
+        <h1>Muhammad Sualeh Ali Mirza</h1>
+        <h2>I am a <span id="typewriter"></span><span class="typewriter-cursor">|</span></h2>
+        <p>I am a Software Engineering student passionate about Unity game development, C# programming, and building highly interactive immersive applications.</p>
+        <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">
+                View Projects
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+    </section>
 
-    <h1>Muhammad Sualeh Ali Mirza</h1>
+    <!-- About Section -->
+    <section class="about reveal" id="about">
+        <div class="section-header">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a Software Engineering student focused on mastering game development workflows with Unity and C#. I enjoy designing interactive mechanics, programming systems, and structuring applications from the ground up.</p>
+                <p>My core goal is to bridge the gap between technical software engineering design and engaging user gameplay, ultimately becoming a professional game programmer contributing to major projects.</p>
+            </div>
+            <div class="about-cards">
+                <div class="about-card">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        Unity & Game Dev
+                    </h3>
+                    <p>Creating interactive experiences with custom physics, AI controllers, mechanics, and modular C# scripting.</p>
+                </div>
+                <div class="about-card">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        Software Engineering
+                    </h3>
+                    <p>Studying architectural design patterns, data structures, and algorithms to build clean, maintainable systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h2>Software Engineering Student</h2>
-     
-    <p>I am a Software Engineering student passionate about Unity game development, C# programming, and building interactive applications. </p> 
-        <a href="#contact" class="btn">Contact Me</a>
+    <!-- Skills Section -->
+    <section class="skills reveal" id="skills">
+        <div class="section-header">
+            <h2>My Toolbox</h2>
+        </div>
+        <div class="skills-container">
+            <!-- Unity -->
+            <div class="skill-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                Unity Engine
+            </div>
+            <!-- C# -->
+            <div class="skill-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                </svg>
+                C# Programming
+            </div>
+            <!-- HTML5 -->
+            <div class="skill-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                </svg>
+                HTML5
+            </div>
+            <!-- CSS3 -->
+            <div class="skill-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                CSS3
+            </div>
+            <!-- Git -->
+            <div class="skill-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="18" cy="18" r="3"></circle>
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <line x1="6" y1="9" x2="6" y2="15"></line>
+                    <path d="M18 15V9a4 4 0 0 0-4-4h-5"></path>
+                </svg>
+                Git Version Control
+            </div>
+            <!-- GitHub -->
+            <div class="skill-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                GitHub
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section class="projects reveal" id="projects">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+        </div>
+        
+        <div class="project-grid">
+            <!-- 2D Ball Catcher Game Card -->
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="Img.game.png" alt="2D Ball Catcher Game Screenshot">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">Unity</span>
+                        <span class="project-tag">C#</span>
+                        <span class="project-tag">2D Game Physics</span>
+                    </div>
+                    <h3>2D Ball Catcher Game</h3>
+                    <p>A 2D game developed in Unity where players catch falling items. Implements scoring, variable difficulty, dynamic spawner systems, object pooling, and responsive touch controls.</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/muhammadsualeh870-cpu/my-portfolio" target="_blank" class="btn btn-secondary">
+                            Source Code
+                        </a>
+                        <button id="playGameBtn" class="btn btn-primary">
+                            Play Demo 🎮
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-   <a href="#projects" class="btn">View Projects</a>
+        <!-- Arcade Cabinet Play Area -->
+        <div class="game-cabinet-wrapper" id="gameCabinet">
+            <div class="cabinet-header" id="cabinetHeader">
+                <div class="cabinet-title">Unity Playable Clone - Ball Catcher</div>
+                <div class="cabinet-indicators">
+                    <div class="indicator green"></div>
+                    <div class="indicator"></div>
+                </div>
+            </div>
+            
+            <div class="cabinet-scoreboard">
+                <div>SCORE: <span class="score-value" id="hudScore">0000</span></div>
+                <div>LIVES: <span class="score-value" id="hudLives">❤❤❤</span></div>
+                <div>HIGH: <span class="score-value" id="hudHighScore">0000</span></div>
+            </div>
 
-</section>
-<section class="about" id="about">
-   
+            <div class="canvas-container">
+                <canvas id="gameCanvas" width="640" height="380"></canvas>
+                
+                <!-- Start Overlay -->
+                <div class="canvas-overlay" id="overlayStart">
+                    <h4>Ball Catcher Arcade</h4>
+                    <p>Catch the falling blue and green balls. Avoid the red toxic bombs!</p>
+                    <button class="btn btn-primary" id="btnStartGame">Insert Coin / Start</button>
+                </div>
 
-    <h2>About Me</h2>
+                <!-- Game Over Overlay -->
+                <div class="canvas-overlay hidden" id="overlayGameOver">
+                    <h4>GAME OVER</h4>
+                    <p>Final Score: <span id="finalScoreVal">0</span></p>
+                    <button class="btn btn-primary" id="btnRestartGame">Try Again</button>
+                </div>
+            </div>
 
-    <p>
-    I am a Software Engineering student focused on learning game development with Unity and C#. I enjoy building practical projects to strengthen my programming skills and gain hands-on experience. My goal is to become a professional game developer and contribute to real-world projects.
-</p>
+            <div class="cabinet-controls">
+                <div class="control-buttons-row">
+                    <button class="control-btn" id="btnMoveLeft">◀ Move Left</button>
+                    <button class="control-btn" id="btnPauseGame">Pause</button>
+                    <button class="control-btn" id="btnMoveRight">Move Right ▶</button>
+                </div>
+                <div class="control-instructions">
+                    Move the basket using <strong>Mouse movement</strong>, <strong>Touch drag</strong>, or <strong>Arrow Keys (◀ / ▶)</strong>.
+                </div>
+            </div>
+        </div>
+    </section>
 
-    
+    <!-- Contact Section -->
+    <section class="contact reveal" id="contact">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+        </div>
+        <div class="contact-cards">
+            <!-- Email -->
+            <a href="mailto:muhammadsualeh870@gmail.com" class="contact-card">
+                <div class="contact-icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </div>
+                <h3>Email</h3>
+                <p>muhammadsualeh870@gmail.com</p>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/muhammadsualeh870-cpu" target="_blank" class="contact-card">
+                <div class="contact-icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </div>
+                <h3>GitHub</h3>
+                <p>muhammadsualeh870-cpu</p>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/muhammad-sualeh-ali-mirza-63612b377" target="_blank" class="contact-card">
+                <div class="contact-icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </div>
+                <h3>LinkedIn</h3>
+                <p>Muhammad Sualeh Ali Mirza</p>
+            </a>
+        </div>
+    </section>
 
-</section>
-<section class="skills" id="skills">
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Muhammad Sualeh Ali Mirza. Crafted with passion & JS Canvas.</p>
+    </footer>
 
-    <h2>Skills</h2>
-
-    <div class="skill-box">Unity</div>
-
-    <div class="skill-box">C# (Learning)</div>
-
-    <div class="skill-box">HTML</div>
-
-    <div class="skill-box">CSS</div>
-
-    <div class="skill-box">Git</div>
-
-    <div class="skill-box">GitHub</div>
-
-</section>
-<section class="projects" id="projects">
-
-    <h2>Projects</h2>
-
-    <div class="project-card">
-        <img src="Img.game.png" alt="2D Ball Catcher Game">
-
-        <h3>2D Ball Catcher Game</h3>
-
-        <p>
-            A simple 2D game developed in Unity using C#. The player controls a platform
-            to catch falling balls. The game includes object spawning, collision detection,
-            and a game over system.
-        </p>
-        <a href="https://github.com/muhammadsualeh870-cpu/my-portfolio"
-   target="_blank"
-   class="btn">
-    View Source Code
-</a>
-
-    </div>
-
-
-</section>
-<section class="contact" id="contact">
-
-    <h2>Contact</h2>
-
-    <p>
-        Email:
-        <a href="mailto:muhammadsualeh870@gmail.com" >
-            muhammadsualeh870@gmail.com
-        </a>
-    </p>
-
-    <p>
-        GitHub:
-        <a href="https://github.com/muhammadsualeh870-cpu" target="_blank">
-            muhammadsualeh870-cpu
-        </a>
-    </p>
-
-    <p>
-        LinkedIn:
-        <a href="https://linkedin.com/in/muhammad-sualeh-ali-mirza-63612b377" target="_blank">
-            Muhammad Sualeh Ali Mirza
-        </a>
-    </p>
-
-</section>
-
- <footer>
-
-    <p>© 2026 Muhammad Sualeh Ali Mirza. All Rights Reserved.</p>
-
-</footer>
-<script src="script.js"></script>
-
-
+    <script src="script.js"></script>
 </body>
 
 </html>
